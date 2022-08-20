@@ -44,11 +44,7 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-/*
-=============== 
-Global Styles
-===============
-*/
+
 
 *,
 ::after,
@@ -203,4 +199,39 @@ p {
 }
 .page {
   min-height: calc(100vh - (20vh + 10rem));
+}
+
+@media screen and (max-width: 900px){
+  .imgContainer img{
+      width: 45vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .imgContainer img{
+      width: 65vw;
+      height: 55vh;
+
+  }
+
+  .modalOverview{
+      padding: 0 0.5rem;
+      font-size: 1.3rem;
+     
+  }
+
+  .modalContainer{
+      border: none;
+
+  }
+
+  .modalTitle {
+      padding-top:0.5rem ;
+      font-size: 2.5rem;
+  }
+  .tagline{
+      padding-bottom: 1rem;
+      font-size: 1.1rem;
+  }
 }
